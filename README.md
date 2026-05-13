@@ -65,11 +65,14 @@ Use when creating:
 product-requirement-foundry/
   SKILL.md
   README.md
+  README.zh-CN.md
   adapters/
   prompts/
   templates/
   domain-packs/
   schemas/
+  scripts/
+  starter/
   examples/
 ```
 
@@ -138,6 +141,7 @@ docs/output/
 - examples for greenfield, incremental, and OpenSpec-driven use, including social `1->n` OpenSpec handoff
 - a baseline scanner sample workspace under [examples/baseline-scanner-sample](./examples/baseline-scanner-sample)
 - a complete social incremental example under [examples/social-comment-priority-full](./examples/social-comment-priority-full)
+- starter workspace guidance under [starter/STARTER_USAGE.md](./starter/STARTER_USAGE.md)
 
 ## Testing
 
@@ -320,6 +324,10 @@ For repository automation and contribution flow, also use:
 - [.github/ISSUE_TEMPLATE/bug_report.md](.github/ISSUE_TEMPLATE/bug_report.md)
 - [.github/ISSUE_TEMPLATE/feature_request.md](.github/ISSUE_TEMPLATE/feature_request.md)
 - [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)
+
+## Current Positioning
+
+This package is already usable for internal pilot projects and early open-source adoption. It can significantly reduce the amount of manual PRD writing, but for high-risk or high-impact changes, product and engineering should still jointly confirm the goal, boundaries, current online behavior, and evidence chain before implementation starts.
 
 ## Recommended Next Extensions
 

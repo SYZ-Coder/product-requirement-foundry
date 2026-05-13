@@ -324,11 +324,37 @@ node <product-requirement-foundry-root>/scripts/cli.js score <workspace-dir>
 
 如果需要补齐 GitHub 仓库协作和自动化，还可以直接使用：
 
-- [.github/workflows/test.yml](.github/workflows/test.yml)
-- [.github/ISSUE_TEMPLATE/bug_report.md](.github/ISSUE_TEMPLATE/bug_report.md)
-- [.github/ISSUE_TEMPLATE/feature_request.md](.github/ISSUE_TEMPLATE/feature_request.md)
-- [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)
+- [.github/workflows/test.yml](./.github/workflows/test.yml)
+- [.github/ISSUE_TEMPLATE/bug_report.md](./.github/ISSUE_TEMPLATE/bug_report.md)
+- [.github/ISSUE_TEMPLATE/feature_request.md](./.github/ISSUE_TEMPLATE/feature_request.md)
+- [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md)
 
 ## 当前定位
 
 这套技能包已经具备内部试点和开源早期使用的基础能力。它可以显著减少产品从零整理需求的工作量，但对于高风险需求，仍建议产品经理和研发共同确认目标、边界、当前线上行为和证据链。
+
+## 推荐的下一步扩展
+
+- 增加更多领域包，例如电商、SaaS、内容社区等
+- 接入更真实的解析器，把历史资料自动归一成结构化 baseline JSON
+- 增加 PRD 完整性校验器，按 schema 检查生成结果是否缺项
+- 增加需求 lineage 构建能力，支持长期历史追踪和需求演化分析
+
+## AI 工具适配
+
+当前仓库已经直接补好了这些 AI 开发工具适配入口：
+
+- Codex：[AGENTS.md](./AGENTS.md)
+- Claude Code：[CLAUDE.md](./CLAUDE.md)
+- Cursor：[.cursor/rules/product-requirement-foundry.mdc](./.cursor/rules/product-requirement-foundry.mdc)
+- GitHub Copilot：[.github/copilot-instructions.md](./.github/copilot-instructions.md)
+
+如果需要查看 macOS、Windows、Linux 下的安装与使用说明，请看：
+
+- [AI_TOOL_SETUP.md](./AI_TOOL_SETUP.md)
+- [AI_TOOL_SETUP.zh-CN.md](./AI_TOOL_SETUP.zh-CN.md)
+
+如果你希望按产品经理视角快速上手，也可以直接看：
+
+- [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md)
+- [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md)
