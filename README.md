@@ -341,3 +341,8 @@ For installation and usage across macOS, Windows, and Linux, see:
 
 - [AI_TOOL_SETUP.md](./AI_TOOL_SETUP.md)
 - [AI_TOOL_SETUP.zh-CN.md](./AI_TOOL_SETUP.zh-CN.md)
+
+For a PM-first usage path, see:
+
+- [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md)
+- [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md)
