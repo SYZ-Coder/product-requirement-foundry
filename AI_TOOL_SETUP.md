@@ -125,3 +125,10 @@ Ready-to-copy prompt templates are available under:
 - [Cursor prompt](./prompts/tool-prompts/cursor-prompt.md)
 - [GitHub Copilot prompt](./prompts/tool-prompts/copilot-prompt.md)
 - [Claude Code prompt](./prompts/tool-prompts/claude-code-prompt.md)
+
+## Developer Docs
+
+If you want the shortest engineer onboarding path:
+
+- [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md)
+- [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md)

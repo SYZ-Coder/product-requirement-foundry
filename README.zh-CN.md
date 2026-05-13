@@ -16,6 +16,20 @@
 - API、数据模型、埋点、运营配置文档
 - 企业内部知识库、评审纪要和决策记录
 
+## 从这里开始
+
+请按你的角色选择入口：
+
+| 角色 | 建议先看 | 作用 |
+|---|---|---|
+| 产品经理 | [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md) | 先走 5 分钟产品路径，快速理解怎么准备输入、怎么看 PRD 和可信度报告 |
+| 技术人员 | [DEVELOPER_QUICKSTART.zh-CN.md](./DEVELOPER_QUICKSTART.zh-CN.md) | 用最短路径完成工作区初始化、基线扫描、AI 生成和可信度评分 |
+| 团队负责人 / 维护者 | [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md) | 了解安装方式、核心命令、AI 工具接入和团队落地方式 |
+
+如果你想先看一个现成演示，再开始接入，也可以先看：
+
+- [examples/quickstart/README.zh-CN.md](./examples/quickstart/README.zh-CN.md)
+
 ## 项目简介
 
 Product Requirement Foundry 可以把这条链路标准化：
@@ -358,3 +372,8 @@ node <product-requirement-foundry-root>/scripts/cli.js score <workspace-dir>
 
 - [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md)
 - [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md)
+
+如果你希望按技术人员视角快速上手，也可以直接看：
+
+- [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md)
+- [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md)

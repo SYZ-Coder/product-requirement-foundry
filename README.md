@@ -13,6 +13,20 @@ It is designed for teams that already have reusable project understanding assets
 - API, data, and tracking documents
 - internal enterprise knowledge bases
 
+## Start Here
+
+Choose the path that matches your role:
+
+| Role | Start with | Purpose |
+|---|---|---|
+| Product manager | [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md) | Learn the 5-minute PM path, how to prepare inputs, and how to review PRD and confidence outputs |
+| Engineer | [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md) | Run the shortest technical path from workspace setup to PRD, OpenSpec, and confidence output |
+| Team lead / maintainer | [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md) | Understand installation, commands, AI tool adapters, and team adoption workflow |
+
+If you want a ready-made demo first, use:
+
+- [examples/quickstart/README.md](./examples/quickstart/README.md)
+
 ## Project Summary
 
 Product Requirement Foundry standardizes this delivery path:
@@ -354,3 +368,8 @@ For a PM-first usage path, see:
 
 - [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md)
 - [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md)
+
+For an engineer-first usage path, see:
+
+- [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md)
+- [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md)

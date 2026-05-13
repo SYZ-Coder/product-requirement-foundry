@@ -1,6 +1,6 @@
 # AI 工具安装与使用
 
-本文档说明如何让 `product-requirement-foundry` 适配并运行在以下 AI 开发工具中：
+本文档说明如何让 `product-requirement-foundry` 运行在以下 AI 开发工具中：
 
 - Codex
 - Cursor
@@ -13,9 +13,9 @@
 - Windows
 - Linux
 
-## 已加入的适配文件
+## 已包含的适配文件
 
-当前仓库已经补好了这些工具入口文件：
+当前仓库已经内置这些工具入口：
 
 - `AGENTS.md`
 - `CLAUDE.md`
@@ -26,25 +26,25 @@
 
 - Git
 - Node.js 18+
-- 已本地克隆本仓库
-- 已准备一个工作区，例如 `examples/quickstart/`、`starter/` 或你自己的 `baseline/ + docs/output/`
+- 本地克隆本仓库
+- 一个准备好的工作区，例如 `examples/quickstart/`、`starter/`，或者你自己的 `baseline/ + docs/output/`
 
 ## 1. Codex
 
-OpenAI 官方文档说明 Codex CLI 支持 macOS、Windows、Linux：
+OpenAI 官方提供适用于 macOS、Windows、Linux 的 Codex CLI：
 
 ```bash
 npm i -g @openai/codex
 codex
 ```
 
-使用方式：在终端打开仓库或需求工作区，运行 `codex`，再让它先读取 `AGENTS.md`、`README.md` 和 `baseline/` 历史资料，然后在 `docs/output/` 下生成产物。
+使用方式：打开本仓库或需求工作区，然后让 Codex 先读取 `AGENTS.md`、`README.md` 和 `baseline/` 历史资料，再在 `docs/output/` 下生成产物。
 
 ## 2. Cursor
 
-桌面版：
+桌面端：
 
-- 从官方页面下载 macOS、Windows 或 Linux 版本
+- 从 Cursor 官方下载 macOS、Windows 或 Linux 版本
 
 CLI / Agent：
 
@@ -53,20 +53,20 @@ curl https://cursor.com/install -fsS | bash
 cursor-agent --version
 ```
 
-使用方式：用 Cursor 打开仓库，让它加载 `.cursor/rules/product-requirement-foundry.mdc`，再基于 `baseline/` 生成结果。
+使用方式：用 Cursor 打开仓库，让它加载 `.cursor/rules/product-requirement-foundry.mdc`。
 
 ## 3. GitHub Copilot
 
-GitHub Copilot 适合在：
+GitHub Copilot 适合运行在：
 
 - VS Code
 - JetBrains IDE
 
-中使用。保留 `.github/copilot-instructions.md`，并让 Copilot Chat 或 Agent 先读 `baseline/`，再写 `docs/output/`。
+保持 `.github/copilot-instructions.md` 在仓库中，然后让 Copilot Chat 或 Agent 先读取 `baseline/`，再把结果写入 `docs/output/`。
 
 ## 4. Claude Code
 
-Anthropic 官方文档说明 Claude Code 支持 macOS、Linux，以及 Windows + WSL / Git Bash。
+Anthropic 官方说明 Claude Code 支持 macOS、Linux，以及 Windows + WSL / Git Bash。
 
 标准安装：
 
@@ -89,11 +89,11 @@ Windows PowerShell：
 irm https://claude.ai/install.ps1 | iex
 ```
 
-使用方式：在仓库或需求工作区中运行 `claude`，Claude Code 会读取 `CLAUDE.md` 作为项目记忆。
+使用方式：在仓库目录运行 `claude`。Claude Code 会读取 `CLAUDE.md` 作为项目记忆入口。
 
 ## 推荐的跨平台工作流
 
-1. 从 `examples/quickstart/` 开始体验，或从 `starter/` 创建空白工作区。
+1. 先从 `examples/quickstart/` 体验，或者从 `starter/` 创建空白工作区。
 2. 把历史资料放入 `baseline/`。
 3. 运行：
 
@@ -101,7 +101,7 @@ irm https://claude.ai/install.ps1 | iex
 node scripts/baseline-scan.js <workspace-dir>
 ```
 
-4. 让 AI 工具在 `docs/output/` 下生成 Product Requirement Foundry 包。
+4. 让 AI 工具在 `docs/output/` 下生成 Product Requirement Foundry 产物。
 5. 再运行：
 
 ```bash
@@ -110,22 +110,29 @@ node scripts/confidence-score.js <workspace-dir>
 
 ## 官方参考链接
 
-- OpenAI Codex CLI：<https://developers.openai.com/codex/cli>
-- OpenAI Codex 计划说明：<https://help.openai.com/en/articles/11369540>
-- Cursor Rules：<https://docs.cursor.com/context/rules>
-- Cursor 下载：<https://cursor.com/download>
-- Cursor CLI 安装：<https://docs.cursor.com/en/cli/installation>
-- GitHub Copilot 自定义指令：<https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot?tool=vscode>
-- GitHub Copilot 安装：<https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-extension?tool=vscode>
-- Claude Code 安装：<https://docs.anthropic.com/en/docs/claude-code/getting-started>
-- Claude Code 记忆文件：<https://docs.anthropic.com/en/docs/claude-code/memory>
+- OpenAI Codex CLI: <https://developers.openai.com/codex/cli>
+- OpenAI Codex overview / plans: <https://help.openai.com/en/articles/11369540>
+- Cursor rules: <https://docs.cursor.com/context/rules>
+- Cursor download: <https://cursor.com/download>
+- Cursor CLI installation: <https://docs.cursor.com/en/cli/installation>
+- GitHub Copilot custom instructions: <https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot?tool=vscode>
+- GitHub Copilot install: <https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-extension?tool=vscode>
+- Claude Code getting started: <https://docs.anthropic.com/en/docs/claude-code/getting-started>
+- Claude Code memory: <https://docs.anthropic.com/en/docs/claude-code/memory>
 
 ## 提示词模板
 
-已提供可直接复制的标准提示词：
+已经提供可直接复制的标准提示词：
 
 - [prompts/tool-prompts/README.md](./prompts/tool-prompts/README.md)
 - [Codex 提示词](./prompts/tool-prompts/codex-prompt.md)
 - [Cursor 提示词](./prompts/tool-prompts/cursor-prompt.md)
 - [GitHub Copilot 提示词](./prompts/tool-prompts/copilot-prompt.md)
 - [Claude Code 提示词](./prompts/tool-prompts/claude-code-prompt.md)
+
+## 开发者文档
+
+如果你希望按技术人员最短路径接入，请先看：
+
+- [DEVELOPER_QUICKSTART.zh-CN.md](./DEVELOPER_QUICKSTART.zh-CN.md)
+- [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md)
