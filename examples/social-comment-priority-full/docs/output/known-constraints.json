@@ -1,0 +1,47 @@
+{
+  "business": [
+    {
+      "text": "Query: `limit`",
+      "source": "baseline/api/interfaces/comment-api.md",
+      "sourceType": "APIDoc"
+    },
+    {
+      "text": "Response must not reveal relationship scores.",
+      "source": "baseline/api/interfaces/comment-api.md",
+      "sourceType": "APIDoc"
+    },
+    {
+      "text": "Must preserve moderation filtering.",
+      "source": "baseline/wiki/modules/comment-module.md",
+      "sourceType": "Wiki"
+    },
+    {
+      "text": "Must not show hidden or blocked-user comments.",
+      "source": "baseline/wiki/modules/comment-module.md",
+      "sourceType": "Wiki"
+    },
+    {
+      "text": "Requirement: block relationships must override all positive relationship signals.",
+      "source": "baseline/wiki/modules/social-graph.md",
+      "sourceType": "Wiki"
+    }
+  ],
+  "technical": [
+    {
+      "text": "API latency p95 should stay under 200ms.",
+      "source": "baseline/api/interfaces/comment-api.md",
+      "sourceType": "APIDoc"
+    },
+    {
+      "text": "API latency p95 should stay under 200ms.",
+      "source": "baseline/wiki/modules/comment-module.md",
+      "sourceType": "Wiki"
+    },
+    {
+      "text": "Must not expose private relationship details in API responses.",
+      "source": "baseline/wiki/modules/social-graph.md",
+      "sourceType": "Wiki"
+    }
+  ],
+  "compliance": []
+}

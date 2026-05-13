@@ -1,0 +1,25 @@
+{
+  "name": "product-requirement-foundry",
+  "version": "0.1.1",
+  "description": "Turn one-line product requests into history-compatible PRD and AI-ready OpenSpec handoff artifacts.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "product-requirement-foundry": "scripts/cli.js"
+  },
+  "scripts": {
+    "scan": "node scripts/baseline-scan.js",
+    "score": "node scripts/confidence-score.js",
+    "test": "node tests/run-tests.js"
+  },
+  "keywords": [
+    "prd",
+    "openspec",
+    "product-requirements",
+    "ai-development",
+    "requirements"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "feature-001",
+    "name": "Comment Module",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-002",
+    "name": "Feature: Comment List",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-003",
+    "name": "Requirement: users can view comments on the feed detail page.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-004",
+    "name": "Feature: comment ranking sorts comments by relevance and creation time.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-005",
+    "name": "API: comment list API returns paginated comments.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-006",
+    "name": "Event: comment exposure is tracked when a comment enters the viewport.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  }
+]

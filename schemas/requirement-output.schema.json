@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Requirement Output Package",
+  "type": "object",
+  "required": ["requirementType", "outputs"],
+  "properties": {
+    "requirementType": { "type": "string" },
+    "baselineVersion": { "type": "string" },
+    "matchedAssets": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

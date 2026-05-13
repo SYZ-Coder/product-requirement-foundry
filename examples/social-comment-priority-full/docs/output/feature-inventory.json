@@ -1,0 +1,182 @@
+[
+  {
+    "id": "feature-001",
+    "name": "Comment API",
+    "module": "api/interfaces",
+    "status": "Current State",
+    "sourceType": "APIDoc",
+    "sources": [
+      "baseline/api/interfaces/comment-api.md"
+    ]
+  },
+  {
+    "id": "feature-002",
+    "name": "API: GET /api/v1/feed/{feedId}/comments",
+    "module": "api/interfaces",
+    "status": "Current State",
+    "sourceType": "APIDoc",
+    "sources": [
+      "baseline/api/interfaces/comment-api.md"
+    ]
+  },
+  {
+    "id": "feature-003",
+    "name": "Comment Events",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-004",
+    "name": "Event: comment_exposure",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-005",
+    "name": "Event: comment_click",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-006",
+    "name": "Trigger: comment enters viewport on feed detail page.",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-007",
+    "name": "Properties: feed_id, comment_id, author_id, position, source_page.",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-008",
+    "name": "Properties: feed_id, comment_id, position, source_page.",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-009",
+    "name": "Comment Module",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-010",
+    "name": "Feature: Comment List",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-011",
+    "name": "Requirement: users can view comments on the feed detail page.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-012",
+    "name": "Feature: comment ranking sorts comments by relevance and creation time.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-013",
+    "name": "API: comment list API returns paginated comments.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-014",
+    "name": "Event: comment exposure is tracked when a comment enters the viewport.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/comment-module.md"
+    ]
+  },
+  {
+    "id": "feature-015",
+    "name": "Social Graph Module",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/social-graph.md"
+    ]
+  },
+  {
+    "id": "feature-016",
+    "name": "Feature: Close Connection Signals",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/social-graph.md"
+    ]
+  },
+  {
+    "id": "feature-017",
+    "name": "Feature: mutual follow relationship is available for ranking.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/social-graph.md"
+    ]
+  },
+  {
+    "id": "feature-018",
+    "name": "Feature: recent interaction score is available for ranking experiments.",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/social-graph.md"
+    ]
+  }
+]

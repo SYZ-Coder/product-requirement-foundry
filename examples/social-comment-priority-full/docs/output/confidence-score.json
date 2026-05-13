@@ -1,0 +1,224 @@
+{
+  "total": 100,
+  "status": "Review Required",
+  "breakdown": [
+    {
+      "dimension": "Baseline Reliability",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "Intent Alignment",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "Historical Consistency",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "Impact Completeness",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "OpenSpec Readiness",
+      "score": 100,
+      "notes": []
+    }
+  ],
+  "blockingIssues": [],
+  "reviewRequired": [
+    "7 evidence rows lack a source type or full source reference."
+  ],
+  "evidenceChain": [
+    {
+      "claim": "Historical reference",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/comment-module.md",
+      "proof": "Current comment list and ranking behavior",
+      "compatibility": "Current comment list and ranking behavior",
+      "confidence": "High"
+    },
+    {
+      "claim": "Historical reference",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/social-graph.md",
+      "proof": "Close connection signal availability",
+      "compatibility": "Close connection signal availability",
+      "confidence": "High"
+    },
+    {
+      "claim": "Historical reference",
+      "sourceType": "APIDoc",
+      "sourceReference": "baseline/api/interfaces/comment-api.md",
+      "proof": "Current API contract and latency constraint",
+      "compatibility": "Current API contract and latency constraint",
+      "confidence": "High"
+    },
+    {
+      "claim": "Historical reference",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "Current tracking event definitions",
+      "compatibility": "Current tracking event definitions",
+      "confidence": "High"
+    },
+    {
+      "claim": "Comment ranking",
+      "sourceType": "",
+      "sourceReference": "comment-module.md",
+      "proof": "Modified with close-connection boost",
+      "compatibility": "Modified with close-connection boost",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Close connection",
+      "sourceType": "",
+      "sourceReference": "social-graph.md, glossary.md",
+      "proof": "Used as ranking signal",
+      "compatibility": "Used as ranking signal",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Comment exposure",
+      "sourceType": "",
+      "sourceReference": "comment-events.md",
+      "proof": "Extended with ranking reason",
+      "compatibility": "Extended with ranking reason",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Comment ranking",
+      "sourceType": "Wiki",
+      "sourceReference": "",
+      "proof": "Relevance and creation time",
+      "compatibility": "Modified",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Comment API",
+      "sourceType": "APIDoc",
+      "sourceReference": "",
+      "proof": "Paginated comments",
+      "compatibility": "Modified",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Tracking",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "",
+      "proof": "position only",
+      "compatibility": "Modified",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Moderation",
+      "sourceType": "Wiki",
+      "sourceReference": "",
+      "proof": "Filter before display",
+      "compatibility": "Unchanged",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Current comment ranking",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/comment-module.md",
+      "proof": "Current State",
+      "compatibility": "Current State",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Close connection signal",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/social-graph.md",
+      "proof": "Current State",
+      "compatibility": "Current State",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Comment API",
+      "sourceType": "APIDoc",
+      "sourceReference": "baseline/api/interfaces/comment-api.md",
+      "proof": "Current State",
+      "compatibility": "Current State",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Comment tracking",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "Current State",
+      "compatibility": "Current State",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Current ranking is relevance and creation time",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/comment-module.md",
+      "proof": "Current ranking is relevance and creation time",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    },
+    {
+      "claim": "Close connection signals exist",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/social-graph.md",
+      "proof": "Close connection signals exist",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    },
+    {
+      "claim": "Comment API is paginated",
+      "sourceType": "APIDoc",
+      "sourceReference": "baseline/api/interfaces/comment-api.md",
+      "proof": "Comment API is paginated",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    },
+    {
+      "claim": "Exposure and click events exist",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "Exposure and click events exist",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    }
+  ],
+  "compatibilityProof": [
+    {
+      "claim": "Current online behavior is described",
+      "status": "Proved by artifact text",
+      "evidence": "current online"
+    },
+    {
+      "claim": "Delta between old and new behavior is described",
+      "status": "Proved by artifact text",
+      "evidence": "Delta Overview"
+    },
+    {
+      "claim": "Compatibility or fallback behavior is described",
+      "status": "Proved by artifact text",
+      "evidence": "compatibility"
+    },
+    {
+      "claim": "Rollback or feature flag strategy is described",
+      "status": "Proved by artifact text",
+      "evidence": "rollback"
+    },
+    {
+      "claim": "Regression or validation scope is described",
+      "status": "Proved by artifact text",
+      "evidence": "regression"
+    },
+    {
+      "claim": "Historical source references are present",
+      "status": "Proved by evidence chain",
+      "evidence": "19 evidence rows"
+    }
+  ],
+  "evidenceGaps": [
+    "7 evidence rows lack a source type or full source reference."
+  ]
+}

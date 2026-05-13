@@ -1,0 +1,69 @@
+{
+  "total": 16,
+  "status": "Blocked",
+  "breakdown": [
+    {
+      "dimension": "Baseline Reliability",
+      "score": 80,
+      "notes": [
+        "Missing baseline-references.md"
+      ]
+    },
+    {
+      "dimension": "Intent Alignment",
+      "score": 0,
+      "notes": [
+        "Missing prd.md",
+        "Goals not detected",
+        "Non-goals not detected",
+        "User scenario not detected",
+        "Open questions section not detected"
+      ]
+    },
+    {
+      "dimension": "Historical Consistency",
+      "score": 0,
+      "notes": [
+        "Current online behavior not detected",
+        "Delta/change description not detected",
+        "Source traceability not detected",
+        "Missing consistency-review.md"
+      ]
+    },
+    {
+      "dimension": "Impact Completeness",
+      "score": 0,
+      "notes": [
+        "Missing impact-analysis.md",
+        "Affected modules not detected",
+        "Affected pages not detected",
+        "API impact not detected",
+        "Data impact not detected",
+        "Tracking impact not detected",
+        "Missing change-checklist.md"
+      ]
+    },
+    {
+      "dimension": "OpenSpec Readiness",
+      "score": 0,
+      "notes": [
+        "Missing openspec/proposal.md",
+        "Missing openspec/design.md",
+        "Missing openspec/spec.md",
+        "Missing openspec/tasks.md",
+        "Missing openspec/dev-context.md",
+        "OpenSpec scenarios not detected",
+        "Executable task checklist not detected"
+      ]
+    }
+  ],
+  "blockingIssues": [
+    "Intent Alignment: Missing prd.md; Goals not detected; Non-goals not detected; User scenario not detected; Open questions section not detected",
+    "Historical Consistency: Current online behavior not detected; Delta/change description not detected; Source traceability not detected; Missing consistency-review.md",
+    "Impact Completeness: Missing impact-analysis.md; Affected modules not detected; Affected pages not detected; API impact not detected; Data impact not detected; Tracking impact not detected; Missing change-checklist.md",
+    "OpenSpec Readiness: Missing openspec/proposal.md; Missing openspec/design.md; Missing openspec/spec.md; Missing openspec/tasks.md; Missing openspec/dev-context.md; OpenSpec scenarios not detected; Executable task checklist not detected"
+  ],
+  "reviewRequired": [
+    "Baseline Reliability: Missing baseline-references.md"
+  ]
+}

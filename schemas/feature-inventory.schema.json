@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Feature Inventory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "module"],
+    "properties": {
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "module": { "type": "string" },
+      "status": { "type": "string" },
+      "sources": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  }
+}

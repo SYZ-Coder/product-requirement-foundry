@@ -1,0 +1,92 @@
+[
+  {
+    "id": "feature-001",
+    "name": "if relationship features are unavailable, use the current ranking fallback",
+    "module": "prd/history",
+    "status": "Approved",
+    "sourceType": "HistoricalPRD",
+    "sources": [
+      "baseline/prd/history/comment-ranking-prd.md"
+    ]
+  },
+  {
+    "id": "feature-002",
+    "name": "Tracking Events",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-003",
+    "name": "Existing Events",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-004",
+    "name": "comment impression events include comment id, position, feed id, and session id",
+    "module": "tracking/events",
+    "status": "Current State",
+    "sourceType": "TrackingDoc",
+    "sources": [
+      "baseline/tracking/events/comment-events.md"
+    ]
+  },
+  {
+    "id": "feature-005",
+    "name": "Comment Module Overview",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/feed-detail-comments.md"
+    ]
+  },
+  {
+    "id": "feature-006",
+    "name": "Module Boundaries",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/feed-detail-comments.md"
+    ]
+  },
+  {
+    "id": "feature-007",
+    "name": "empty relationship features do not block page rendering",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/feed-detail-comments.md"
+    ]
+  },
+  {
+    "id": "feature-008",
+    "name": "the feed detail page is responsible for rendering order and interaction entry points",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/feed-detail-comments.md"
+    ]
+  },
+  {
+    "id": "feature-009",
+    "name": "ranking logic is served by backend comment ranking APIs",
+    "module": "wiki/modules",
+    "status": "Current State",
+    "sourceType": "Wiki",
+    "sources": [
+      "baseline/wiki/modules/feed-detail-comments.md"
+    ]
+  }
+]

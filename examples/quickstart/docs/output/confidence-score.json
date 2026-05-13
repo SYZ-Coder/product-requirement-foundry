@@ -1,0 +1,200 @@
+{
+  "total": 95,
+  "status": "Pass",
+  "breakdown": [
+    {
+      "dimension": "Baseline Reliability",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "Intent Alignment",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "Historical Consistency",
+      "score": 100,
+      "notes": []
+    },
+    {
+      "dimension": "Impact Completeness",
+      "score": 85,
+      "notes": [
+        "Affected modules not detected"
+      ]
+    },
+    {
+      "dimension": "OpenSpec Readiness",
+      "score": 90,
+      "notes": [
+        "Executable task checklist not detected"
+      ]
+    }
+  ],
+  "blockingIssues": [],
+  "reviewRequired": [],
+  "evidenceChain": [
+    {
+      "claim": "Historical reference",
+      "sourceType": "HistoricalPRD",
+      "sourceReference": "baseline/prd/history/comment-ranking-prd.md",
+      "proof": "",
+      "compatibility": "",
+      "confidence": "High"
+    },
+    {
+      "claim": "Historical reference",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/feed-detail-comments.md",
+      "proof": "",
+      "compatibility": "",
+      "confidence": "High"
+    },
+    {
+      "claim": "Historical reference",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "",
+      "compatibility": "",
+      "confidence": "High"
+    },
+    {
+      "claim": "Historical reference",
+      "sourceType": "Glossary",
+      "sourceReference": "baseline/glossary/glossary.md",
+      "proof": "",
+      "compatibility": "",
+      "confidence": "High"
+    },
+    {
+      "claim": "Comment ranking",
+      "sourceType": "HistoricalPRD",
+      "sourceReference": "baseline/prd/history/comment-ranking-prd.md",
+      "proof": "Quality + recency",
+      "compatibility": "Modified",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Feed detail comments",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/feed-detail-comments.md",
+      "proof": "Renders ranked list from comment service",
+      "compatibility": "Modified",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Tracking",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "Position-based comment events",
+      "compatibility": "Modified",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Moderation visibility",
+      "sourceType": "HistoricalPRD",
+      "sourceReference": "baseline/prd/history/comment-ranking-prd.md",
+      "proof": "Filter before display",
+      "compatibility": "Unchanged",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "PRD claim",
+      "sourceType": "HistoricalPRD",
+      "sourceReference": "baseline/prd/history/comment-ranking-prd.md",
+      "proof": "Approved historical behavior",
+      "compatibility": "Approved historical behavior",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "PRD claim",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/feed-detail-comments.md",
+      "proof": "Current State",
+      "compatibility": "Current State",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "PRD claim",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "Current State",
+      "compatibility": "Current State",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "PRD claim",
+      "sourceType": "Glossary",
+      "sourceReference": "baseline/glossary/glossary.md",
+      "proof": "Domain language",
+      "compatibility": "Domain language",
+      "confidence": "Medium"
+    },
+    {
+      "claim": "Development context baseline",
+      "sourceType": "HistoricalPRD",
+      "sourceReference": "baseline/prd/history/comment-ranking-prd.md",
+      "proof": "",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    },
+    {
+      "claim": "Development context baseline",
+      "sourceType": "Wiki",
+      "sourceReference": "baseline/wiki/modules/feed-detail-comments.md",
+      "proof": "",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    },
+    {
+      "claim": "Development context baseline",
+      "sourceType": "TrackingDoc",
+      "sourceReference": "baseline/tracking/events/comment-events.md",
+      "proof": "",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    },
+    {
+      "claim": "Development context baseline",
+      "sourceType": "Glossary",
+      "sourceReference": "baseline/glossary/glossary.md",
+      "proof": "",
+      "compatibility": "Used as implementation boundary",
+      "confidence": "High"
+    }
+  ],
+  "compatibilityProof": [
+    {
+      "claim": "Current online behavior is described",
+      "status": "Proved by artifact text",
+      "evidence": "current online"
+    },
+    {
+      "claim": "Delta between old and new behavior is described",
+      "status": "Proved by artifact text",
+      "evidence": "Delta Overview"
+    },
+    {
+      "claim": "Compatibility or fallback behavior is described",
+      "status": "Proved by artifact text",
+      "evidence": "compatibility"
+    },
+    {
+      "claim": "Rollback or feature flag strategy is described",
+      "status": "Proved by artifact text",
+      "evidence": "rollback"
+    },
+    {
+      "claim": "Regression or validation scope is described",
+      "status": "Proved by artifact text",
+      "evidence": "regression"
+    },
+    {
+      "claim": "Historical source references are present",
+      "status": "Proved by evidence chain",
+      "evidence": "16 evidence rows"
+    }
+  ],
+  "evidenceGaps": []
+}

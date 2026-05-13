@@ -1,0 +1,21 @@
+{
+  "business": [
+    {
+      "text": "ranking changes must not alter moderation visibility rules",
+      "source": "baseline/prd/history/comment-ranking-prd.md",
+      "sourceType": "HistoricalPRD"
+    },
+    {
+      "text": "ranking changes must preserve stable fallback behavior",
+      "source": "baseline/prd/history/comment-ranking-prd.md",
+      "sourceType": "HistoricalPRD"
+    },
+    {
+      "text": "ranking experiments should preserve position-based analysis compatibility",
+      "source": "baseline/tracking/events/comment-events.md",
+      "sourceType": "TrackingDoc"
+    }
+  ],
+  "technical": [],
+  "compliance": []
+}

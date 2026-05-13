@@ -1,0 +1,22 @@
+[
+  {
+    "term": "close connection",
+    "definition": "a user with strong relationship signals such as mutual follows, frequent interaction, or recent direct engagement",
+    "source": "baseline/glossary/glossary.md"
+  },
+  {
+    "term": "feed detail page",
+    "definition": "the page that shows one feed item and its full comment thread",
+    "source": "baseline/glossary/glossary.md"
+  },
+  {
+    "term": "comment ranking fallback",
+    "definition": "the existing ranking path used when stronger ordering signals are unavailable",
+    "source": "baseline/glossary/glossary.md"
+  },
+  {
+    "term": "moderation visibility rules",
+    "definition": "the rules that determine whether a comment can appear at all",
+    "source": "baseline/glossary/glossary.md"
+  }
+]

@@ -1,0 +1,57 @@
+project:
+  name: ""
+  domain: ""
+  platforms: []
+
+request:
+  one_liner: ""
+  expected_output: prd_for_dev
+  preferred_mode: auto
+  must_reference_history: true
+
+baseline_sources:
+  - type: openspec
+    path: baseline/openspec/
+    enabled: true
+  - type: wiki
+    path: baseline/wiki/
+    enabled: true
+  - type: knowledge_wiki
+    path: baseline/knowledge/
+    enabled: true
+  - type: prd
+    path: baseline/prd/
+    enabled: true
+  - type: design
+    path: baseline/design/
+    enabled: true
+  - type: api
+    path: baseline/api/
+    enabled: true
+  - type: data
+    path: baseline/data/
+    enabled: true
+  - type: tracking
+    path: baseline/tracking/
+    enabled: true
+  - type: operations
+    path: baseline/operations/
+    enabled: true
+  - type: glossary
+    path: baseline/glossary/
+    enabled: true
+
+constraints:
+  preserve_terminology: true
+  mark_assumptions: true
+  output_language: zh-CN
+
+output:
+  directory: docs/output/
+  files:
+    - prd.md
+    - impact-analysis.md
+    - baseline-references.md
+    - change-checklist.md
+    - open-questions.md
+    - consistency-review.md

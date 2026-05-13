@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Baseline Model",
+  "type": "object",
+  "required": ["product", "baseline", "history", "constraints", "terminology"],
+  "properties": {
+    "product": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "domain": { "type": "string" },
+        "platforms": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "properties": {
+        "modules": { "type": "array", "items": { "type": "object" } },
+        "features": { "type": "array", "items": { "type": "object" } },
+        "pages": { "type": "array", "items": { "type": "object" } },
+        "apis": { "type": "array", "items": { "type": "object" } },
+        "entities": { "type": "array", "items": { "type": "object" } },
+        "events": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "history": {
+      "type": "object",
+      "properties": {
+        "specs": { "type": "array", "items": { "type": "object" } },
+        "prds": { "type": "array", "items": { "type": "object" } },
+        "releases": { "type": "array", "items": { "type": "object" } },
+        "decisions": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "business": { "type": "array", "items": { "type": "string" } },
+        "technical": { "type": "array", "items": { "type": "string" } },
+        "compliance": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "terminology": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}

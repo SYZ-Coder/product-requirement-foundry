@@ -1,0 +1,9 @@
+[
+  {
+    "id": "requirement-001",
+    "title": "Approved Historical PRD",
+    "sourceType": "HistoricalPRD",
+    "source": "baseline/prd/history/comment-ranking-prd.md",
+    "status": "Approved"
+  }
+]

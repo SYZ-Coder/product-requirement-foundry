@@ -1,0 +1,16 @@
+---
+description: Use Product Requirement Foundry to turn one-line requests into history-compatible PRD and OpenSpec handoff artifacts.
+alwaysApply: true
+---
+
+# Product Requirement Foundry Cursor Rule
+
+Use this repository as a structured requirement workflow.
+
+## What To Do
+
+- Read `baseline/request/` first.
+- Read relevant historical sources under `baseline/`.
+- Prefer incremental reasoning for existing products.
+- Generate requirement outputs under `docs/output/`.
+- Preserve compatibility, fallback, rollout, rollback, and tracking implications.

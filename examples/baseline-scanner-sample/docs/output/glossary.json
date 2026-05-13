@@ -1,0 +1,12 @@
+[
+  {
+    "term": "Close connection",
+    "definition": "a user with mutual follow or high recent interaction.",
+    "source": "baseline/glossary/glossary.md"
+  },
+  {
+    "term": "Feed detail page",
+    "definition": "the page that displays one feed item and its comments.",
+    "source": "baseline/glossary/glossary.md"
+  }
+]

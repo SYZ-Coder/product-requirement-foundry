@@ -1,0 +1,17 @@
+# Node and package manager artifacts
+node_modules/
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local temporary files
+*.tmp
+*.temp
+
+# Test and generated artifacts
+coverage/
+dist/

@@ -1,0 +1,22 @@
+{
+  "business": [
+    {
+      "text": "Must preserve moderation filtering.",
+      "source": "baseline/wiki/modules/comment-module.md",
+      "sourceType": "Wiki"
+    },
+    {
+      "text": "Must not show hidden or blocked-user comments.",
+      "source": "baseline/wiki/modules/comment-module.md",
+      "sourceType": "Wiki"
+    }
+  ],
+  "technical": [
+    {
+      "text": "API latency p95 should stay under 200ms.",
+      "source": "baseline/wiki/modules/comment-module.md",
+      "sourceType": "Wiki"
+    }
+  ],
+  "compliance": []
+}

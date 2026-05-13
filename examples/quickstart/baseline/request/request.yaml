@@ -1,0 +1,28 @@
+project:
+  name: social-app
+  domain: social
+  platforms:
+    - ios
+    - android
+    - web
+
+request:
+  one_liner: prioritize comments from close connections on the feed detail page
+  expected_output: prd_and_openspec
+  preferred_mode: incremental
+
+baseline_sources:
+  - type: prd
+    path: baseline/prd/
+  - type: wiki
+    path: baseline/wiki/
+  - type: tracking
+    path: baseline/tracking/
+  - type: glossary
+    path: baseline/glossary/
+
+constraints:
+  must_reference_history: true
+  preserve_terminology: true
+  preserve_online_compatibility: true
+  output_language: en
