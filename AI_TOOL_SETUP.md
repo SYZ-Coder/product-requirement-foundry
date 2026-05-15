@@ -2,6 +2,8 @@
 
 This document explains how to use `product-requirement-foundry` with:
 
+Chinese version: [AI_TOOL_SETUP.zh-CN.md](./AI_TOOL_SETUP.zh-CN.md)
+
 - Codex
 - Cursor
 - GitHub Copilot

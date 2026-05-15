@@ -2,6 +2,8 @@
 
 This guide is for engineers who want to install, configure, and use `product-requirement-foundry` in daily work.
 
+Chinese version: [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md)
+
 ## What This Repository Is
 
 `product-requirement-foundry` is not just a prompt pack. It is a requirement delivery workflow for turning a short request into:

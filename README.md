@@ -2,6 +2,8 @@
 
 One-line intent in, history-compatible PRD and AI-ready specs out.
 
+Chinese version: [README.zh-CN.md](./README.zh-CN.md)
+
 `product-requirement-foundry` is a requirement foundry for turning a short product request into a development-ready package that stays aligned with historical product assets, online behavior, and team knowledge.
 
 It is designed for teams that already have reusable project understanding assets such as:

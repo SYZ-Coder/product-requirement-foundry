@@ -2,6 +2,8 @@
 
 This is the shortest path for product managers who do not want to learn the repository structure first.
 
+Chinese version: [PRODUCT_MANAGER_QUICKSTART.zh-CN.md](./PRODUCT_MANAGER_QUICKSTART.zh-CN.md)
+
 ## 3 Steps
 
 1. Fill [pm-input.md](./starter/pm-input.md) first, or use the Chinese version [pm-input.zh-CN.md](./starter/pm-input.zh-CN.md) if your team prefers Chinese input.

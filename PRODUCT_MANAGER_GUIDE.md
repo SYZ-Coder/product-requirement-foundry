@@ -2,6 +2,8 @@
 
 This guide is written for product managers who want to use `product-requirement-foundry` without first learning the full repository structure.
 
+Chinese version: [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md)
+
 If you only want the fastest starting point, read [PRODUCT_MANAGER_QUICKSTART.md](./PRODUCT_MANAGER_QUICKSTART.md) first.
 
 Goal:

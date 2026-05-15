@@ -2,6 +2,8 @@
 
 This is the fastest way for an engineer to try `product-requirement-foundry`.
 
+Chinese version: [DEVELOPER_QUICKSTART.zh-CN.md](./DEVELOPER_QUICKSTART.zh-CN.md)
+
 ## 1. Prepare
 
 Requirements:
