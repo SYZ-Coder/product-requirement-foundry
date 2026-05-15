@@ -11,11 +11,13 @@ function usage() {
 
 Usage:
   product-requirement-foundry init <workspace-dir>
+  product-requirement-foundry prepare <workspace-dir>
   product-requirement-foundry scan <workspace-dir>
   product-requirement-foundry score <workspace-dir>
 
 Commands:
   init   Create a ready-to-fill requirement workspace from starter/
+  prepare Convert pm-input.md into baseline/request/request.md and request.yaml
   scan   Generate baseline-summary and feature-inventory from baseline/
   score  Generate confidence-report and confidence-score from docs/output/
 `);
@@ -40,7 +42,7 @@ function copyStarter(target) {
   fs.mkdirSync(target, { recursive: true });
   fs.cpSync(source, target, { recursive: true });
   console.log(`Created product-requirement-foundry workspace: ${target}`);
-  console.log('Next: fill baseline/request/request.md and baseline/request/request.yaml');
+  console.log('Next: fill pm-input.md first, then place any historical files into baseline/.');
 }
 
 function runScript(script, target) {
@@ -59,6 +61,9 @@ switch (command) {
     break;
   case 'scan':
     runScript('baseline-scan.js', target);
+    break;
+  case 'prepare':
+    runScript('prepare-pm-input.js', target);
     break;
   case 'score':
     runScript('confidence-score.js', target);

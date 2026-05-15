@@ -4,9 +4,9 @@ This is the shortest path for product managers who do not want to learn the repo
 
 ## 3 Steps
 
-1. Write one short request in `baseline/request/request.md`.
-2. Put your existing materials into `baseline/`, such as old PRDs, wiki notes, API notes, tracking docs, or glossary files.
-3. Ask your AI tool to read the workspace and generate outputs under `docs/output/`.
+1. Fill `pm-input.md` first, or use `pm-input.zh-CN.md` if your team prefers Chinese input.
+2. Run `prepare` to convert `pm-input.md` into `baseline/request/request.md` and `request.yaml`.
+3. Put your existing materials into `baseline/`, then ask your AI tool to read the workspace and generate outputs under `docs/output/`.
 
 ## What To Read First In The Output
 

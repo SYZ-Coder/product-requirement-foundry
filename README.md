@@ -15,18 +15,25 @@ It is designed for teams that already have reusable project understanding assets
 
 ## Start Here
 
-Choose the path that matches your role:
+Choose only one starting path:
 
 | Role | Start with | Purpose |
 |---|---|---|
-| Product manager (fastest) | [PRODUCT_MANAGER_QUICKSTART.md](./PRODUCT_MANAGER_QUICKSTART.md) | Start from a 3-step PM-only workflow with minimal repository knowledge |
-| Product manager | [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md) | Learn the 5-minute PM path, how to prepare inputs, and how to review PRD and confidence outputs |
-| Engineer | [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md) | Run the shortest technical path from workspace setup to PRD, OpenSpec, and confidence output |
-| Team lead / maintainer | [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md) | Understand installation, commands, AI tool adapters, and team adoption workflow |
+| I am a product manager | [PRODUCT_MANAGER_QUICKSTART.md](./PRODUCT_MANAGER_QUICKSTART.md) | 3-step PM-only path with minimal repository knowledge |
+| I want a 5-minute demo | [examples/quickstart/README.md](./examples/quickstart/README.md) | See one complete example before using your own materials |
+| I am an engineer or AI tool user | [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md) | Fastest path from workspace setup to PRD, OpenSpec, and confidence output |
 
-If you want a ready-made demo first, use:
+If you are evaluating the repository for rollout or maintenance later, use [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md).
 
-- [examples/quickstart/README.md](./examples/quickstart/README.md)
+## For First-Time Users
+
+Ignore most files on your first pass.
+
+Use this simple rule:
+
+1. Product managers start with `PRODUCT_MANAGER_QUICKSTART.md`
+2. Engineers start with `DEVELOPER_QUICKSTART.md`
+3. People who just want a demo start with `examples/quickstart/README.md`
 
 ## Project Summary
 
@@ -74,65 +81,35 @@ Use when creating:
 - compatibility or migration demands
 - change requests derived from historical specs or knowledge assets
 
+## Advanced And Integration
+
+Everything below this point is for installation, skill-pack usage, repository integration, or deeper customization.
+
+If you are just trying the repository for the first time, you can stop reading here and use one of the three starting paths above.
+
 ## Skill Library Layout
 
-This repository now supports both installation styles:
+This repository supports both installation styles:
 
 - all-in-one: install the repo root skill `product-requirement-foundry`
 - composable: install one or more skills from `skills/`
 
-Recommended composable set:
+If you only need the install index and recommended skill paths, go directly to:
 
-- `skills/product-requirement-foundry`
-- `skills/prd-baseline-scan`
-- `skills/prd-generate`
-- `skills/openspec-handoff`
-- `skills/confidence-review`
-
-When using a GitHub-based skill installer, install the specific path you want instead of assuming the repo only exposes one root `SKILL.md`.
-
-For a short installer-facing index, see [skills/README.md](./skills/README.md) and [skills/README.zh-CN.md](./skills/README.zh-CN.md).
+- [skills/README.md](./skills/README.md)
+- [skills/README.zh-CN.md](./skills/README.zh-CN.md)
+- [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md)
 
 ## Install Path Examples
 
-If your skill installer accepts GitHub repo paths, these are the primary install targets:
+If your skill installer accepts GitHub repo paths, the primary install targets are:
 
 ```text
 <repo>/SKILL.md
 <repo>/skills/product-requirement-foundry
-<repo>/skills/prd-baseline-scan
-<repo>/skills/prd-generate
-<repo>/skills/openspec-handoff
-<repo>/skills/confidence-review
 ```
 
-## Package Structure
-
-```text
-product-requirement-foundry/
-  SKILL.md
-  skills/
-    product-requirement-foundry/
-      SKILL.md
-    prd-baseline-scan/
-      SKILL.md
-    prd-generate/
-      SKILL.md
-    openspec-handoff/
-      SKILL.md
-    confidence-review/
-      SKILL.md
-  README.md
-  README.zh-CN.md
-  adapters/
-  prompts/
-  templates/
-  domain-packs/
-  schemas/
-  scripts/
-  starter/
-  examples/
-```
+For the full repository layout, install variants, and Claude/Codex differences, use [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md).
 
 ## Recommended Execution Order
 
@@ -166,14 +143,11 @@ node scripts/cli.js score <workspace-dir>
 
 ## Choosing a Skill
 
-Use the root `product-requirement-foundry` skill when the request spans the whole workflow.
+Use the root `product-requirement-foundry` skill for the full workflow.
 
-Use a narrower skill when the user only needs one stage:
+Use sub-skills only when you want a narrower trigger or a single stage.
 
-- `prd-baseline-scan`: load and normalize historical context
-- `prd-generate`: generate or update the PRD package
-- `openspec-handoff`: convert reviewed outputs into OpenSpec artifacts
-- `confidence-review`: score readiness and evidence coverage
+For the detailed breakdown, see [skills/README.md](./skills/README.md).
 
 ## Suggested Output Files
 

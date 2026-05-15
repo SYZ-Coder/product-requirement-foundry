@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build:skills": "node scripts/generate-skill-packs.js",
+    "prepare:pm": "node scripts/prepare-pm-input.js",
     "scan": "node scripts/baseline-scan.js",
     "score": "node scripts/confidence-score.js",
     "test": "node tests/run-tests.js"

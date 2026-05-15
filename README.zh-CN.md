@@ -18,18 +18,25 @@
 
 ## 从这里开始
 
-请按你的角色选择入口：
+第一次使用时，只选一个入口就够了：
 
 | 角色 | 建议先看 | 作用 |
 |---|---|---|
-| 产品经理（最快） | [PRODUCT_MANAGER_QUICKSTART.zh-CN.md](./PRODUCT_MANAGER_QUICKSTART.zh-CN.md) | 用 3 步方式先跑通，不需要先理解完整仓库结构 |
-| 产品经理 | [PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md) | 先走 5 分钟产品路径，快速理解怎么准备输入、怎么看 PRD 和可信度报告 |
-| 技术人员 | [DEVELOPER_QUICKSTART.zh-CN.md](./DEVELOPER_QUICKSTART.zh-CN.md) | 用最短路径完成工作区初始化、基线扫描、AI 生成和可信度评分 |
-| 团队负责人 / 维护者 | [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md) | 了解安装方式、核心命令、AI 工具接入和团队落地方式 |
+| 我是产品经理 | [PRODUCT_MANAGER_QUICKSTART.zh-CN.md](./PRODUCT_MANAGER_QUICKSTART.zh-CN.md) | 用 3 步先跑通，不需要先理解完整仓库结构 |
+| 我只想先看一个 5 分钟演示 | [examples/quickstart/README.zh-CN.md](./examples/quickstart/README.zh-CN.md) | 先看一遍完整示例，再决定是否继续接入 |
+| 我是技术同学 / AI 工具使用者 | [DEVELOPER_QUICKSTART.zh-CN.md](./DEVELOPER_QUICKSTART.zh-CN.md) | 用最短路径完成工作区初始化、基线扫描、AI 生成和可信度评分 |
 
-如果你想先看一个现成演示，再开始接入，也可以先看：
+如果你后续需要做团队接入、安装或维护，再看 [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md)。
 
-- [examples/quickstart/README.zh-CN.md](./examples/quickstart/README.zh-CN.md)
+## 给第一次进入仓库的人
+
+第一次看这个仓库时，可以先忽略大部分文档。
+
+只记这条规则：
+
+1. 产品经理先看 `PRODUCT_MANAGER_QUICKSTART.zh-CN.md`
+2. 技术同学先看 `DEVELOPER_QUICKSTART.zh-CN.md`
+3. 只想先试一下的人先看 `examples/quickstart/README.zh-CN.md`
 
 ## 项目简介
 
@@ -81,6 +88,17 @@ Product Requirement Foundry 的核心改进，是强制在需求生成前先加�
 - 兼容性需求
 - 基于历史 spec、知识库、旧需求文档演进的新需求
 
+## 进阶与集成
+
+这之后的内容主要面向：
+
+- 安装 skill
+- 接入不同 AI 工具
+- 理解仓库结构
+- 做更深的自定义或团队落地
+
+如果你只是第一次试用这个仓库，到这里就可以先停，直接按上面的 3 个入口去用。
+
 ## 技能库结构
 
 这个仓库现在同时支持两种安装方式：
@@ -88,58 +106,22 @@ Product Requirement Foundry 的核心改进，是强制在需求生成前先加�
 - 一体化安装：安装仓库根部的 `product-requirement-foundry` 总入口 skill
 - 组合式安装：按需安装 `skills/` 下的一个或多个子 skill
 
-推荐的组合式安装集合：
+如果你只想看安装入口、推荐 skill 路径和最短说明，直接看：
 
-- `skills/product-requirement-foundry`
-- `skills/prd-baseline-scan`
-- `skills/prd-generate`
-- `skills/openspec-handoff`
-- `skills/confidence-review`
-
-如果你使用基于 GitHub 路径的 skill 安装器，建议直接安装目标路径，而不要假设这个仓库只暴露一个根级 `SKILL.md`。
-
-如果你想看一个更短、更偏安装导航的入口，可以直接看 [skills/README.md](./skills/README.md) 和 [skills/README.zh-CN.md](./skills/README.zh-CN.md)。
+- [skills/README.md](./skills/README.md)
+- [skills/README.zh-CN.md](./skills/README.zh-CN.md)
+- [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md)
 
 ## 安装路径示例
 
-如果你的 skill 安装器支持使用 GitHub 仓库路径，下面这些就是主要安装目标：
+如果你的 skill 安装器支持使用 GitHub 仓库路径，下面这些就是最主要的安装目标：
 
 ```text
 <repo>/SKILL.md
 <repo>/skills/product-requirement-foundry
-<repo>/skills/prd-baseline-scan
-<repo>/skills/prd-generate
-<repo>/skills/openspec-handoff
-<repo>/skills/confidence-review
 ```
 
-## 包结构
-
-```text
-product-requirement-foundry/
-  SKILL.md
-  skills/
-    product-requirement-foundry/
-      SKILL.md
-    prd-baseline-scan/
-      SKILL.md
-    prd-generate/
-      SKILL.md
-    openspec-handoff/
-      SKILL.md
-    confidence-review/
-      SKILL.md
-  README.md
-  README.zh-CN.md
-  adapters/
-  prompts/
-  templates/
-  domain-packs/
-  schemas/
-  scripts/
-  starter/
-  examples/
-```
+如果你想看完整仓库结构、Claude/Codex 差异和更细的安装方式，直接看 [DEVELOPER_GUIDE.zh-CN.md](./DEVELOPER_GUIDE.zh-CN.md)。
 
 ## 推荐执行顺序
 
@@ -173,32 +155,19 @@ node scripts/cli.js score <workspace-dir>
 
 ## 如何选择 Skill
 
-当用户要走完整条链路时，优先使用根级 `product-requirement-foundry` 或 `skills/product-requirement-foundry`。
+如果要走完整条链路，优先使用根级 `product-requirement-foundry` 或 `skills/product-requirement-foundry`。
 
-当用户只需要某一个阶段时，优先使用更窄的子 skill：
+如果只想用更窄的阶段型 skill，再看详细说明：
 
-- `prd-baseline-scan`：读取并归一历史基线
-- `prd-generate`：生成或更新 PRD 交付包
-- `openspec-handoff`：把评审后的产物转换为 OpenSpec 交付包
-- `confidence-review`：做可信度评审与证据覆盖检查
+- [skills/README.zh-CN.md](./skills/README.zh-CN.md)
 
 ## Skill 安装示例
 
-如果你的安装器支持按 GitHub 路径安装，可以直接安装这些路径：
+如果你的安装器支持按 GitHub 路径安装，最常见的是直接安装：
 
 ```text
 <repo>/skills/product-requirement-foundry
-<repo>/skills/prd-baseline-scan
-<repo>/skills/prd-generate
-<repo>/skills/openspec-handoff
-<repo>/skills/confidence-review
 ```
-
-推荐实践：
-
-- 想要最省心：只装总入口 skill
-- 想要更精确的触发和更轻的上下文：只装需要的子 skills
-- 想兼顾易用和灵活：同时装总入口 skill 与几个核心子 skills
 
 ## 产物目录
 
