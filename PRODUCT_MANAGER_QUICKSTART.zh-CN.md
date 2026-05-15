@@ -4,9 +4,75 @@
 
 ## 3 步开始
 
-1. 先填写 `pm-input.zh-CN.md`，或者使用 `pm-input.md`。
+1. 先填写 [pm-input.zh-CN.md](./starter/pm-input.zh-CN.md)，或者使用英文版 [pm-input.md](./starter/pm-input.md)。
 2. 运行 `prepare`，把 `pm-input.md` 自动转换成 `baseline/request/request.md` 和 `request.yaml`。
 3. 把你手上的历史资料放进 `baseline/`，再让 AI 在这个工作区里查看你准备好的文件，并把结果生成到 `docs/output/`。
+
+## `prepare` 怎么运行
+
+`prepare` 的意思不是一个抽象动作，而是运行一条命令。
+
+它的作用是把你填写的：
+
+- `pm-input.zh-CN.md`
+- 或 `pm-input.md`
+
+自动整理成：
+
+- `baseline/request/request.md`
+- `baseline/request/request.yaml`
+
+### Windows
+
+如果你在 PowerShell 里，并且当前就在工作区目录：
+
+```powershell
+node D:\spring_AI\product-requirement-foundry\scripts\prepare-pm-input.js .
+```
+
+如果你已经在仓库根目录：
+
+```powershell
+node scripts\prepare-pm-input.js .\tmp\demo-workspace
+```
+
+### macOS
+
+如果你已经在工作区目录：
+
+```bash
+node /path/to/product-requirement-foundry/scripts/prepare-pm-input.js .
+```
+
+如果你已经在仓库根目录：
+
+```bash
+node scripts/prepare-pm-input.js ./tmp/demo-workspace
+```
+
+### Linux
+
+Linux 和 macOS 基本一样：
+
+```bash
+node /path/to/product-requirement-foundry/scripts/prepare-pm-input.js .
+```
+
+或者：
+
+```bash
+node scripts/prepare-pm-input.js ./tmp/demo-workspace
+```
+
+### 运行成功后会看到什么
+
+你通常会看到类似输出：
+
+```text
+Prepared request files from pm-input.zh-CN.md in <workspace>
+```
+
+看到这句，就说明 `request.md` 和 `request.yaml` 已经自动生成好了。
 
 ## 怎么理解“让 AI 在工作区里查看文件”
 

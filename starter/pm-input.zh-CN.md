@@ -100,6 +100,43 @@
 2. 运行 `node <product-requirement-foundry-root>/scripts/prepare-pm-input.js .`。
 3. 让 AI 在这个工作区里查看你准备好的文件，并在 `docs/output/` 下生成结果。
 
+如果你不知道第 2 步怎么运行，可以这样理解：
+
+- `prepare` 就是运行一条命令
+- 它会把你填写的 `pm-input.zh-CN.md` 自动整理成 `baseline/request/request.md` 和 `request.yaml`
+
+常见运行方式：
+
+### Windows
+
+```powershell
+node D:\spring_AI\product-requirement-foundry\scripts\prepare-pm-input.js .
+```
+
+### macOS
+
+```bash
+node /path/to/product-requirement-foundry/scripts/prepare-pm-input.js .
+```
+
+### Linux
+
+```bash
+node /path/to/product-requirement-foundry/scripts/prepare-pm-input.js .
+```
+
+如果你是在仓库根目录运行，也可以写成：
+
+```bash
+node scripts/prepare-pm-input.js ./tmp/demo-workspace
+```
+
+运行成功后，通常会看到：
+
+```text
+Prepared request files from pm-input.zh-CN.md in <workspace>
+```
+
 这里的意思可以理解成：
 
 - 不只是把一句话需求发给 AI

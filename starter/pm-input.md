@@ -100,6 +100,43 @@ After this file is filled:
 2. Run `node <product-requirement-foundry-root>/scripts/prepare-pm-input.js .`.
 3. Ask the AI to look through the files you prepared in this workspace and generate outputs under `docs/output/`.
 
+If you are unsure how to run step 2, here is the simple interpretation:
+
+- `prepare` means running a command
+- it will turn your `pm-input.md` into `baseline/request/request.md` and `request.yaml`
+
+Common command examples:
+
+### Windows
+
+```powershell
+node D:\spring_AI\product-requirement-foundry\scripts\prepare-pm-input.js .
+```
+
+### macOS
+
+```bash
+node /path/to/product-requirement-foundry/scripts/prepare-pm-input.js .
+```
+
+### Linux
+
+```bash
+node /path/to/product-requirement-foundry/scripts/prepare-pm-input.js .
+```
+
+If you are running from the repository root instead, you can also use:
+
+```bash
+node scripts/prepare-pm-input.js ./tmp/demo-workspace
+```
+
+When it works, you will usually see:
+
+```text
+Prepared request files from pm-input.md in <workspace>
+```
+
 Here is what that means in plain language:
 
 - do not send only a one-line request to the AI
