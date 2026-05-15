@@ -2,6 +2,8 @@
 
 This repository provides project memory for Claude Code.
 
+For installable Claude-style skills, see `claude-skills/`.
+
 Use it to generate requirement packages that are:
 
 - history-compatible
@@ -13,6 +15,7 @@ Use it to generate requirement packages that are:
 
 - `AGENTS.md`
 - `SKILL.md`
+- `claude-skills/README.md`
 - `README.md`
 - `README.zh-CN.md`
 

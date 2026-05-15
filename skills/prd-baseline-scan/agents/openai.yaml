@@ -1,0 +1,8 @@
+interface:
+  display_name: "PRD Baseline Scan"
+  short_description: "Load and normalize historical product context before requirement writing starts."
+  brand_color: "#2563EB"
+  default_prompt: "Use $prd-baseline-scan to read the workspace baseline and generate normalized historical context before writing the PRD."
+
+policy:
+  allow_implicit_invocation: true

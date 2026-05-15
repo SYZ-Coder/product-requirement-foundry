@@ -87,6 +87,8 @@ irm https://claude.ai/install.ps1 | iex
 
 Use it by opening a terminal in the repository and running `claude`. Claude Code reads `CLAUDE.md` as project memory.
 
+If you prefer a more installable skill-pack shape, copy one or more directories from `claude-skills/` into `~/.claude/skills/`.
+
 ## Recommended Cross-Platform Workflow
 
 1. Start from `examples/quickstart/` for a demo or `starter/` for a blank workspace.

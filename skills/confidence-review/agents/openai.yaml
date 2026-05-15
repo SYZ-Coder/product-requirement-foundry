@@ -1,0 +1,8 @@
+interface:
+  display_name: "Confidence Review"
+  short_description: "Review readiness, traceability, compatibility coverage, and evidence gaps before handoff."
+  brand_color: "#2563EB"
+  default_prompt: "Use $confidence-review to score this requirement package for readiness, evidence coverage, and unresolved gaps."
+
+policy:
+  allow_implicit_invocation: true

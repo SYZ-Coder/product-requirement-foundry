@@ -36,9 +36,54 @@ npm test
 
 There is no extra dependency installation step in the current version.
 
+## Install As Skills
+
+This repository can also be consumed as a skill library.
+
+Recommended install options:
+
+- install the root skill when you want one broad entry point
+- install one or more paths under `skills/` when you want narrower triggers
+
+Recommended skill paths:
+
+- `skills/product-requirement-foundry`
+- `skills/prd-baseline-scan`
+- `skills/prd-generate`
+- `skills/openspec-handoff`
+- `skills/confidence-review`
+
+Practical rule:
+
+- choose the root skill for end-to-end requirement generation
+- choose sub-skills when you want more precise installation and triggering
+
+## Claude Code Skill Pack
+
+To keep Claude Code closer to the Codex skill layout, this repository also includes a parallel `claude-skills/` directory.
+
+Recommended Claude skill paths:
+
+- `claude-skills/product-requirement-foundry`
+- `claude-skills/prd-baseline-scan`
+- `claude-skills/prd-generate`
+- `claude-skills/openspec-handoff`
+- `claude-skills/confidence-review`
+
+Install them by copying the desired subdirectories into `~/.claude/skills/`.
+
+To keep the Codex and Claude skill packs aligned, edit `scripts/skill-pack-definitions.js` and run:
+
+```bash
+npm run build:skills
+```
+
 ## Repository Entry Points
 
 - Main overview: [README.md](./README.md)
+- Skill library entrypoints: [SKILL.md](./SKILL.md) and [skills/](./skills)
+- Claude skill-pack entrypoints: [CLAUDE.md](./CLAUDE.md) and [claude-skills/](./claude-skills)
+- Marketplace metadata: [.agents/plugins/marketplace.json](./.agents/plugins/marketplace.json)
 - Tool setup: [AI_TOOL_SETUP.md](./AI_TOOL_SETUP.md)
 - Product-manager workflow: [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md)
 - Prompt templates: [prompts/tool-prompts/README.md](./prompts/tool-prompts/README.md)

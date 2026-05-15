@@ -1,0 +1,8 @@
+interface:
+  display_name: "OpenSpec Handoff"
+  short_description: "Convert a reviewed PRD package into OpenSpec artifacts for AI-assisted development."
+  brand_color: "#2563EB"
+  default_prompt: "Use $openspec-handoff to convert the reviewed requirement package into proposal, design, spec, tasks, and dev-context outputs."
+
+policy:
+  allow_implicit_invocation: true

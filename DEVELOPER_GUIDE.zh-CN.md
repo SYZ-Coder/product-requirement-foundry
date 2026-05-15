@@ -36,9 +36,64 @@ npm test
 
 当前版本不需要额外安装依赖。
 
+## 作为 Skills 安装
+
+这个仓库也可以作为一个 skill 库来使用。
+
+推荐的安装方式有两种：
+
+- 安装根级总入口 skill，适合希望只有一个统一入口的团队
+- 安装 `skills/` 下的一个或多个子 skill，适合希望按阶段精细触发的团队
+
+推荐安装路径：
+
+- `skills/product-requirement-foundry`
+- `skills/prd-baseline-scan`
+- `skills/prd-generate`
+- `skills/openspec-handoff`
+- `skills/confidence-review`
+
+实用建议：
+
+- 需要端到端需求生成时，优先选择总入口 skill
+- 只想覆盖某个阶段时，优先安装对应子 skill
+
+## Claude Code Skill 包
+
+为了尽量和 Codex 的 skills 布局保持一致，这个仓库也提供了并行的 `claude-skills/` 目录。
+
+推荐的 Claude skill 路径：
+
+- `claude-skills/product-requirement-foundry`
+- `claude-skills/prd-baseline-scan`
+- `claude-skills/prd-generate`
+- `claude-skills/openspec-handoff`
+- `claude-skills/confidence-review`
+
+安装方式是把需要的子目录复制到 `~/.claude/skills/`。
+
+为了让 Codex 和 Claude 两套 skill 包保持一致，后续可统一修改 `scripts/skill-pack-definitions.js`，再执行：
+
+```bash
+npm run build:skills
+```
+
+如果你的 skill 安装器支持按 GitHub 路径安装，可直接使用类似下面的路径：
+
+```text
+<repo>/skills/product-requirement-foundry
+<repo>/skills/prd-baseline-scan
+<repo>/skills/prd-generate
+<repo>/skills/openspec-handoff
+<repo>/skills/confidence-review
+```
+
 ## 仓库主要入口
 
 - 总览说明：[README.zh-CN.md](./README.zh-CN.md)
+- Skill 入口：[SKILL.md](./SKILL.md) 与 [skills](./skills)
+- Claude skill 包入口：[CLAUDE.md](./CLAUDE.md) 与 [claude-skills](./claude-skills)
+- Marketplace 元数据：[.agents/plugins/marketplace.json](./.agents/plugins/marketplace.json)
 - 工具安装与适配：[AI_TOOL_SETUP.zh-CN.md](./AI_TOOL_SETUP.zh-CN.md)
 - 产品经理使用说明：[PRODUCT_MANAGER_GUIDE.zh-CN.md](./PRODUCT_MANAGER_GUIDE.zh-CN.md)
 - 提示词模板：[prompts/tool-prompts/README.zh-CN.md](./prompts/tool-prompts/README.zh-CN.md)

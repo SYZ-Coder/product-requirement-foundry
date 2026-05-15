@@ -73,11 +73,54 @@ Use when creating:
 - compatibility or migration demands
 - change requests derived from historical specs or knowledge assets
 
+## Skill Library Layout
+
+This repository now supports both installation styles:
+
+- all-in-one: install the repo root skill `product-requirement-foundry`
+- composable: install one or more skills from `skills/`
+
+Recommended composable set:
+
+- `skills/product-requirement-foundry`
+- `skills/prd-baseline-scan`
+- `skills/prd-generate`
+- `skills/openspec-handoff`
+- `skills/confidence-review`
+
+When using a GitHub-based skill installer, install the specific path you want instead of assuming the repo only exposes one root `SKILL.md`.
+
+For a short installer-facing index, see [skills/README.md](./skills/README.md) and [skills/README.zh-CN.md](./skills/README.zh-CN.md).
+
+## Install Path Examples
+
+If your skill installer accepts GitHub repo paths, these are the primary install targets:
+
+```text
+<repo>/SKILL.md
+<repo>/skills/product-requirement-foundry
+<repo>/skills/prd-baseline-scan
+<repo>/skills/prd-generate
+<repo>/skills/openspec-handoff
+<repo>/skills/confidence-review
+```
+
 ## Package Structure
 
 ```text
 product-requirement-foundry/
   SKILL.md
+  skills/
+    product-requirement-foundry/
+      SKILL.md
+    prd-baseline-scan/
+      SKILL.md
+    prd-generate/
+      SKILL.md
+    openspec-handoff/
+      SKILL.md
+    confidence-review/
+      SKILL.md
   README.md
   README.zh-CN.md
   adapters/
@@ -119,6 +162,17 @@ node scripts/cli.js init <workspace-dir>
 node scripts/cli.js scan <workspace-dir>
 node scripts/cli.js score <workspace-dir>
 ```
+
+## Choosing a Skill
+
+Use the root `product-requirement-foundry` skill when the request spans the whole workflow.
+
+Use a narrower skill when the user only needs one stage:
+
+- `prd-baseline-scan`: load and normalize historical context
+- `prd-generate`: generate or update the PRD package
+- `openspec-handoff`: convert reviewed outputs into OpenSpec artifacts
+- `confidence-review`: score readiness and evidence coverage
 
 ## Suggested Output Files
 

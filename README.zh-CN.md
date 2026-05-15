@@ -80,11 +80,54 @@ Product Requirement Foundry 的核心改进，是强制在需求生成前先加�
 - 兼容性需求
 - 基于历史 spec、知识库、旧需求文档演进的新需求
 
+## 技能库结构
+
+这个仓库现在同时支持两种安装方式：
+
+- 一体化安装：安装仓库根部的 `product-requirement-foundry` 总入口 skill
+- 组合式安装：按需安装 `skills/` 下的一个或多个子 skill
+
+推荐的组合式安装集合：
+
+- `skills/product-requirement-foundry`
+- `skills/prd-baseline-scan`
+- `skills/prd-generate`
+- `skills/openspec-handoff`
+- `skills/confidence-review`
+
+如果你使用基于 GitHub 路径的 skill 安装器，建议直接安装目标路径，而不要假设这个仓库只暴露一个根级 `SKILL.md`。
+
+如果你想看一个更短、更偏安装导航的入口，可以直接看 [skills/README.md](./skills/README.md) 和 [skills/README.zh-CN.md](./skills/README.zh-CN.md)。
+
+## 安装路径示例
+
+如果你的 skill 安装器支持使用 GitHub 仓库路径，下面这些就是主要安装目标：
+
+```text
+<repo>/SKILL.md
+<repo>/skills/product-requirement-foundry
+<repo>/skills/prd-baseline-scan
+<repo>/skills/prd-generate
+<repo>/skills/openspec-handoff
+<repo>/skills/confidence-review
+```
+
 ## 包结构
 
 ```text
 product-requirement-foundry/
   SKILL.md
+  skills/
+    product-requirement-foundry/
+      SKILL.md
+    prd-baseline-scan/
+      SKILL.md
+    prd-generate/
+      SKILL.md
+    openspec-handoff/
+      SKILL.md
+    confidence-review/
+      SKILL.md
   README.md
   README.zh-CN.md
   adapters/
@@ -126,6 +169,35 @@ node scripts/cli.js init <workspace-dir>
 node scripts/cli.js scan <workspace-dir>
 node scripts/cli.js score <workspace-dir>
 ```
+
+## 如何选择 Skill
+
+当用户要走完整条链路时，优先使用根级 `product-requirement-foundry` 或 `skills/product-requirement-foundry`。
+
+当用户只需要某一个阶段时，优先使用更窄的子 skill：
+
+- `prd-baseline-scan`：读取并归一历史基线
+- `prd-generate`：生成或更新 PRD 交付包
+- `openspec-handoff`：把评审后的产物转换为 OpenSpec 交付包
+- `confidence-review`：做可信度评审与证据覆盖检查
+
+## Skill 安装示例
+
+如果你的安装器支持按 GitHub 路径安装，可以直接安装这些路径：
+
+```text
+<repo>/skills/product-requirement-foundry
+<repo>/skills/prd-baseline-scan
+<repo>/skills/prd-generate
+<repo>/skills/openspec-handoff
+<repo>/skills/confidence-review
+```
+
+推荐实践：
+
+- 想要最省心：只装总入口 skill
+- 想要更精确的触发和更轻的上下文：只装需要的子 skills
+- 想兼顾易用和灵活：同时装总入口 skill 与几个核心子 skills
 
 ## 产物目录
 

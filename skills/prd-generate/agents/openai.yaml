@@ -1,0 +1,8 @@
+interface:
+  display_name: "PRD Generate"
+  short_description: "Generate or update a requirement package from reviewed baseline materials."
+  brand_color: "#2563EB"
+  default_prompt: "Use $prd-generate to classify this request as 0-to-1 or 1-to-n and produce the PRD package under docs/output."
+
+policy:
+  allow_implicit_invocation: true

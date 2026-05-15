@@ -1,0 +1,8 @@
+interface:
+  display_name: "Product Requirement Foundry"
+  short_description: "End-to-end requirement generation from baseline loading to PRD, OpenSpec handoff, and confidence review."
+  brand_color: "#2563EB"
+  default_prompt: "Use $product-requirement-foundry to turn a short product request into a baseline-grounded PRD package with OpenSpec handoff and confidence review."
+
+policy:
+  allow_implicit_invocation: true

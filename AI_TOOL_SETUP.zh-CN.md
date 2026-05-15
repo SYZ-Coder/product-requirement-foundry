@@ -91,6 +91,8 @@ irm https://claude.ai/install.ps1 | iex
 
 使用方式：在仓库目录运行 `claude`。Claude Code 会读取 `CLAUDE.md` 作为项目记忆入口。
 
+如果你更希望按“可安装 skill 包”的方式使用，也可以把 `claude-skills/` 下的一个或多个子目录复制到 `~/.claude/skills/`。
+
 ## 推荐的跨平台工作流
 
 1. 先从 `examples/quickstart/` 体验，或者从 `starter/` 创建空白工作区。
