@@ -2,6 +2,8 @@
 
 This guide is written for product managers who want to use `product-requirement-foundry` without first learning the full repository structure.
 
+If you only want the fastest starting point, read [PRODUCT_MANAGER_QUICKSTART.md](./PRODUCT_MANAGER_QUICKSTART.md) first.
+
 Goal:
 
 ```text
@@ -45,6 +47,8 @@ Recommended historical sources:
 - glossary
 
 ## 5-Minute Start
+
+If you want the shortest PM-only entry first, read [PRODUCT_MANAGER_QUICKSTART.md](./PRODUCT_MANAGER_QUICKSTART.md).
 
 If you just want to see the workflow once:
 

@@ -19,6 +19,7 @@ Choose the path that matches your role:
 
 | Role | Start with | Purpose |
 |---|---|---|
+| Product manager (fastest) | [PRODUCT_MANAGER_QUICKSTART.md](./PRODUCT_MANAGER_QUICKSTART.md) | Start from a 3-step PM-only workflow with minimal repository knowledge |
 | Product manager | [PRODUCT_MANAGER_GUIDE.md](./PRODUCT_MANAGER_GUIDE.md) | Learn the 5-minute PM path, how to prepare inputs, and how to review PRD and confidence outputs |
 | Engineer | [DEVELOPER_QUICKSTART.md](./DEVELOPER_QUICKSTART.md) | Run the shortest technical path from workspace setup to PRD, OpenSpec, and confidence output |
 | Team lead / maintainer | [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md) | Understand installation, commands, AI tool adapters, and team adoption workflow |

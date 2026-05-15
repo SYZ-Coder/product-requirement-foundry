@@ -2,6 +2,8 @@
 
 这份指南是专门写给产品经理的。目标不是先让你理解整个仓库，而是让你尽快把一句话需求转成一份可交付研发和 AI 开发的需求包。
 
+如果你只想先快速开始，建议先看 [PRODUCT_MANAGER_QUICKSTART.zh-CN.md](./PRODUCT_MANAGER_QUICKSTART.zh-CN.md)。
+
 目标链路：
 
 ```text
@@ -47,6 +49,8 @@
 - 术语表
 
 ## 5 分钟体验版
+
+如果你想先看一份只面向产品经理的最短入口，可以先看 [PRODUCT_MANAGER_QUICKSTART.zh-CN.md](./PRODUCT_MANAGER_QUICKSTART.zh-CN.md)。
 
 如果你只是想先感受一次流程：
 
